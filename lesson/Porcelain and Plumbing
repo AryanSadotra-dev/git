@@ -1,0 +1,16 @@
+In Git, Porcelain and Plumbing describe two levels of commands, based on who they are meant for.
+
+1> Plumbing - Low-level internal commands used by Git itself.
+example :-> git hash-object
+            git cat-file
+            git update-index
+            git write-tree
+            git commit-tree
+
+2> Porcelain - High-level user commands meant for daily use.
+examples :->  git status
+              git add
+              git commit
+              git push
+              git pull
+              git clone
