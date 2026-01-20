@@ -1,0 +1,4 @@
+Arguments → the inputs given inside parentheses () in that syntax
+Arguments in square brackets [] are optional and can be included if needed.
+  ex - mkdir <directory-name>
+  
