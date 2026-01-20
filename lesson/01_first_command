@@ -1,0 +1,6 @@
+git config --global user.name → Git ko batata hai ki commits ka author kaun hai, aur ye name har repo me use hota hai.
+-->Author name set karta hai (global level).
+
+git config --global user.email → Git commits me author ka email set karta hai, jo sabhi repositories me use hota hai.
+-->Commit author email set (global).
+
