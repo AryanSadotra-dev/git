@@ -1,0 +1,39 @@
+Git empty folders ko track nahi karta, sirf files ko track karta hai.
+Empty folder = no tracking.
+it will ignore that file no status milega par agar
+Empty folder ko track karne ke liye uske andar ek file (usually .gitkeep) add karke git add aur git commit karte hain.
+Empty folder → file daalo (.gitkeep).
+
+TWO ATTRIBUTES OF GIT STATUS :</br>
+a.>git status -v → git status ke saath staged files ka actual content (diff) bhi dikha deta hai.
+Status + staged changes preview.
+
+b.>git status -s → repo ka short/summary status dikhata hai (flags jaise M, A, ??).
+Short status view
+example :-> ?? testProject/ ka matlab hai folder Git ke liye untracked hai (abhi tak git add nahi hua).
+            ?? = untracked file/folder.
+
+$ git status -s
+A  index.html
+?? testProject/
+A ka matlab hai file staging area me Added hai aur next commit ke liye ready hai.
+A = Added (staged).
+
+// MUltiple files at once
+touch f1.txt f2.txt f3.txt→ ek hi command me multiple empty files create karta hai.
+Multiple files ek saath banata hai.
+
+git add . → current directory aur uske sub-folders ki saari changes (new/modified files) staging area me daal deta hai.
+Sab kuch stage karta hai.
+
+git add . se hum isliye reframe karte hain kyunki ye unwanted files (debug, temp, secrets) bhi stage kar sakta hai.
+Short reasons (yaad rakhne layak):
+Galti se extra files add ho jaati hain
+Secrets / config leak ho sakte hain
+Dirty commits bante hain (hard to review)
+Better practice (memory tip):
+Selective add karo → git add file1 file2
+
+Agar galti se git add . ho jaye, to files ko staging se hatane ke liye git reset use karte hain.
+git rm --cached .txt files
+Add undo = git reset.
