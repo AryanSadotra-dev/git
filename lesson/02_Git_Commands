@@ -1,1 +1,26 @@
 // tasks - git repo and track those files
+first command - git init
+git init → current folder ko Git repository bana deta hai (new repo start).
+Repo start karta hai.
+
+Second command :->ls → folder ke normal files/folders dikhata hai.
+                  ls -al → saari files (hidden bhi) + detailed info (permissions, owner, size, date) dikhata hai.
+                  ls = simple list
+                  ls -al = all + details
+
+3.> git Status :-> 
+git status → batata hai repo ki current state: kaunsi files modified, staged ya untracked hain.
+Repo ka haal batata hai.
+
+4.> git add text.txt 
+git add → modified/untracked files ko staging area me daalta hai, taaki next commit me jaa sake.
+Commit ke liye files ready karta hai.
+
+5.> git commit space :->
+git commit → staged changes ko permanent snapshot bana deta hai with a message.
+Common code:
+git commit -m "message"
+Changes save karta hai (history me).
+
+6.> git log → repo ke saare commits ka history dikhata hai (author, date, message).
+Commit history show karta hai.
