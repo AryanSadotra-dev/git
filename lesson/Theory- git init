@@ -1,0 +1,21 @@
+git init karte hi default branch pehle master hoti thi or main hoti hai (Git version pe depend).
+Default branch = master (old) / main (new).
+
+rm -rf .git/ → Git repository ko completely delete kar deta hai (project normal folder ban jata hai).
+Git hata deta hai (repo destroy).
+
+git init --i(tab) kar dogh sida -> $ git init --initial-branch=
+aajayega
+git init --initial-branch=<name> → repo create karte time default branch ka naam change karta hai (master/main ke jagah).
+Example:
+git init --initial-branch=dev
+Default branch name set karta hai.
+
+cd testProject/ → terminal ka current directory testProject folder me change karta hai.
+Folder ke andar le jaata hai.
+
+mkdir testProject → testProject naam ka naya folder create karta hai.
+New folder banata hai.
+
+Ek hi project directory me git init karna kaafi hota hai, uske sub-folders me alag se Git repo banane ki zarurat nahi hoti.
+Project root me hi Git init.
