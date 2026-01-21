@@ -1,0 +1,46 @@
+ Core Ctrl Shortcuts (Most Important): 
+ 
+Shortcut	What it does
+Ctrl + C	Stop/terminate a running Git command
+Ctrl + Z	Pause (suspend) the current command
+Ctrl + D	Exit terminal / end input (EOF)
+Ctrl + L	Clear terminal screen (same as clear)
+Command-Line Editing (Very Useful)
+Shortcut	Function
+Ctrl + A	Move cursor to start of line
+Ctrl + E	Move cursor to end of line
+Ctrl + U	Delete from cursor to start
+Ctrl + K	Delete from cursor to end
+Ctrl + W	Delete previous word
+Ctrl + Y	Paste deleted text
+Command History (While typing Git commands)
+Shortcut	Function
+Ctrl + P	Previous command (same as ↑)
+Ctrl + N	Next command (same as ↓)
+Ctrl + R	Search command history (reverse search)
+Ctrl + G	Exit history search
+Git Editor Shortcuts (Commit Message – Vim)
+
+When Git opens Vim (default editor):
+
+Shortcut	Action
+i	Insert mode
+Esc	Exit insert mode
+:wq	Save & quit
+:q!	Quit without saving
+Practical Example (Real Use)
+git commit
+# editor opens
+i        # start typing message
+Esc
+:wq
+
+Summary (Must-Know for Git)
+
+Cancel command → Ctrl + C
+
+Clear screen → Ctrl + L
+
+Search old git commands → Ctrl + R
+
+Fix typing fast → Ctrl + A, Ctrl + E, Ctrl + W
