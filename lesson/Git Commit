@@ -1,0 +1,21 @@
+git commit -m "Created Two Files index.html and abc.txt" → staged files ka snapshot save karta hai with message.
+Commit message ke saath save.
+-m = commit message.
+
+Before commiting these files are not trackable 
+$ git status -s
+A  index.html
+A  testProject/abc.txt.txt
+?? f1.txt
+?? f2.txt
+?? f3.txt
+
+after doing this command : git commit -m "Created Two Files index.html and abc.txt"
+$ git status -s
+?? f1.txt
+?? f2.txt
+?? f3.txt
+we got these files why not those two as they are now aredy trackable by git 
+
+git commit -m "created f1 f2 f3" → staged files (f1, f2, f3) ko commit karta hai aur message me unka description deta hai.
+Staged files save + message.
